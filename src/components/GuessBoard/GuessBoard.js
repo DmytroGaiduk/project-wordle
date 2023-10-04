@@ -10,7 +10,7 @@ function GuessBoard({results}) {
 
   return <div className="guess-results">
             {
-              range(0,NUM_OF_GUESSES_ALLOWED).map((index, i)=>{
+              range(0,NUM_OF_GUESSES_ALLOWED).map((index)=>{
                   if(answers[index]){
                     return <GuessWord key={answers[index].id} word={answers[index].word}></GuessWord>
                   } else {
